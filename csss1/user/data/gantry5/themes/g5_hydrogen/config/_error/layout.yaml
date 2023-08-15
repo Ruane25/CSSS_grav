@@ -1,0 +1,44 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: _error
+  timestamp: 1691559088
+layout:
+  /header/:
+    -
+      - 'logo-8736 30'
+      - 'spacer-3746 70'
+  /navigation/:
+    -
+      - menu-8387
+  /main/:
+    -
+      - system-content-6475
+  /footer/:
+    -
+      - position-footer
+    -
+      - 'copyright-5423 40'
+      - 'spacer-3430 30'
+      - 'branding-5375 30'
+  offcanvas:
+    -
+      - mobile-menu-7974
+structure:
+  header:
+    attributes:
+      boxed: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  main:
+    attributes:
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+content:
+  position-footer:
+    attributes:
+      key: footer

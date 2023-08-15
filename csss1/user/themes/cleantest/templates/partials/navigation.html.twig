@@ -1,0 +1,45 @@
+{% macro loop(page, num) %}
+    {% for p in page.children.visible %}
+            {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
+            {% if p.children.visible.count > 0 %}
+                <li class="has-children {{ current_page|e }} nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    {{ p.menu|e }}
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li class="nav-item">
+                            <a href="{{ p.url|e }}" class=" dropdown-item">
+                                {{ p.menu|e }}
+                            </a>
+                        </li>
+                        {{ _self.loop(p, 1) }}
+                    </ul>
+                </li>
+            {% else %}
+                <li class="nav-item">
+                    <a href="{{ p.url|e }}" class="{{ current_page|e }} {% if num == 1 %}dropdown-item{% else %}nav-link{% endif %}">
+                        {% if p.header.icon %}<i class="fa fa-{{ p.header.icon|e }}"></i>{% endif %}
+                        {{ p.menu|e }}
+                    </a>
+                </li>
+            {% endif %}
+        {% endfor %}
+{% endmacro %}
+
+<div class="container-fluid">
+    <a class="navbar-brand" href="/">
+        <img src="/user/themes/cleantest/images/csssNewLogo.png" alt="" width="70" height="70" class="d-inline-block align-text-top">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            {{ _self.loop(pages, 0) }}
+        </ul>
+    </div>
+    <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+        <label class="form-check-label" for="flexSwitchCheckDefault">Gross Mode</label>
+    </div>
+</div>

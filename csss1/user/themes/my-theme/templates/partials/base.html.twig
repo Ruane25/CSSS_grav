@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="{{ (grav.language.getActive ?: grav.config.site.default_lang)|e }}">
+<head>
+{% block head %}
+    <meta charset="utf-8" />
+    <title>{% if header.title %}{{ header.title|e }} | {% endif %}{{ site.title|e }}</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include 'partials/metadata.html.twig' %}
+
+    <link rel="icon" type="image/png" href="{{ url('theme://images/logo.png')|e }}" />
+    <link rel="canonical" href="{{ page.canonical(true)|e }}" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+{% endblock head %}
+
+{% block stylesheets %}
+    {% do assets.addCss('https://unpkg.com/purecss@1.0.0/build/pure-min.css', 100) %}
+    {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', 99) %}
+    {% do assets.addCss('theme://css/custom.css', 98) %}
+{% endblock %}
+
+{% block javascripts %}
+    {% do assets.addJs('jquery', 100) %}
+{% endblock %}
+
+{% block assets deferred %}
+    {{ assets.css()|raw }}
+    {{ assets.js()|raw }}
+{% endblock %}
+</head>
+<body id="top" class="{{ page.header.body_classes|e }}">
+
+{% block header_navigation %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#">Navbar</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			{% include 'partials/navigation.html.twig' %}
+		</div>
+	</div>
+</nav>
+{% endblock %}
+
+{% block body %}
+    <section id="body">
+        <div class="wrapper padding">
+        {% block content %}{% endblock %}
+        </div>
+    </section>
+{% endblock %}
+
+{% block footer %}
+    <div class="footer text-center">
+        <div class="wrapper padding">
+            <p><a href="https://getgrav.org">Grav</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <a href="https://trilby.media">Trilby Media, LLC</a>.</p>
+        </div>
+    </div>
+{% endblock %}
+
+{% block bottom %}
+    {{ assets.js('bottom')|raw }}
+{% endblock %}
+
+</body>
+</html>
