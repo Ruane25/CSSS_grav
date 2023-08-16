@@ -1,8 +1,9 @@
-backup/*
-!backup/.*
-cache/*
-!cache/.*
-assets/*
-!assets/.*
-logs/*
-!logs/.*
+.sass-cache
+bower_components
+*.css.map
+cache/**
+logs/**
+.DS_Store
+assets/**
+backup/**
+config.codekit
