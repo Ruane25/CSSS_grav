@@ -11,7 +11,7 @@ title: FAQ
         How much is a locker? 
       </button>
     </h2>
-    <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       <div class="accordion-body">
         <p>That depends, we have two sizes of lockers. </p>
         <ul>
