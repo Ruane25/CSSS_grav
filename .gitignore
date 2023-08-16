@@ -11,3 +11,5 @@ cache/gpm/**
 cache/compiled/blueprints/**
 cache/compiled/config/**
 cache/twig/**
+images/**
+

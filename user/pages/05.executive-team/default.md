@@ -3,7 +3,7 @@ title: 'Executive Team'
 media_order: csssNewLogo.png
 ---
 
-Welcome to the Executive team
+<h1>Welcome to the Executive team</h1>
 <!--note this this the start of the path for image files: "/user/pages/05.executive-team/filename.png"-->
 
 <div class="row" style="justify-content: center">           

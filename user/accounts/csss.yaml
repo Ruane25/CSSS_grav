@@ -1,0 +1,15 @@
+state: enabled
+email: csss.usask@gmail.com
+fullname: 'Computer Science Students Society'
+language: en
+content_editor: default
+twofa_enabled: false
+twofa_secret: ROGZDMAOIX4FFKR5DXC4FDNYFCPJS4A4
+avatar: {  }
+hashed_password: $2y$10$6T1gdILGGdboS0RspFaJkOFsb5vpSy6rdyelrRAMEAnwj44VgJNxu
+access:
+  site:
+    login: true
+  admin:
+    login: true
+    super: true
