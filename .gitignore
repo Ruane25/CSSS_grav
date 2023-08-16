@@ -7,4 +7,7 @@ logs/**
 assets/**
 backup/**
 config.codekit
-cache/gpm/
+cache/gpm/**
+cache/compiled/blueprints/**
+cache/compiled/config/**
+cache/twig/**
