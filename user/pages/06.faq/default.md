@@ -2,7 +2,7 @@
 title: FAQ
 ---
 
-<h1>Welcome to FAQS</h1>
+<h1 style="margin: 0">Welcome to FAQS</h1>
 
 <div class="accordion" id="accordionExample">
   <div class="accordion-item">

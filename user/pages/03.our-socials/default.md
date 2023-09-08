@@ -3,7 +3,7 @@ title: 'Our Socials'
 media_order: 'icons8-discord-480.png,icons8-instagram-480.png,icons8-email-480.png,icons8-linkedin-480.png'
 ---
 
-<h1>Our Socials</h1>
+<h1 style="margin: 0">Our Socials</h1>
 <div id="socialsblock" class="container">
     <div class="row row-cols-2" style="justify-content: center">
         <div class="col row">
@@ -30,12 +30,10 @@ media_order: 'icons8-discord-480.png,icons8-instagram-480.png,icons8-email-480.p
 </div>
   
   <style>
-    .social-link:hover{
+    /* .social-link:hover{
           background-color: #0000006b;
           border-radius: 24px;
           cursor: pointer;
-          /* box-sizing: content-box; */
-
     }
     .social-img{
         width: 100%;
@@ -49,5 +47,5 @@ media_order: 'icons8-discord-480.png,icons8-instagram-480.png,icons8-email-480.p
         #socialsblock {
             width: 65%; 
         }
-    }
+    } */
   </style>

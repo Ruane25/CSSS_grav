@@ -1,0 +1,91 @@
+//@import 'theme/custom';
+
+
+
+// merge with existing $theme-colors map
+//$theme-colors: map-merge($theme-colors, ("primary": $primary));
+
+// set changes
+//@import "/var/www/CSSS_grav/user/themes/cleantest/node_modules/bootstrap/scss/bootstrap.scss";
+//@import "../node_modules/bootstrap/scss/bootstrap.scss";
+//@import 'theme/variables';
+
+
+//NEW
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+$mynewcolor: #7c3dbb;
+
+.btn-primary {
+    @include button-variant($mynewcolor, darken($mynewcolor, 7.5%), darken($mynewcolor, 10%), lighten($mynewcolor, 5%), lighten($mynewcolor, 10%), darken($mynewcolor, 30%));
+    color: white;
+    background-color: $mynewcolor;
+}
+
+.btn-outline-primary {
+    @include button-outline-variant($mynewcolor, #222222, lighten($mynewcolor, 5%), $mynewcolor);
+}
+
+.btn-closer {
+    background-color: #7c3dbb !important;
+    border-color: #7c3dbb !important;
+}
+
+
+.accordion-button:not(.collapsed) {
+    color: $mynewcolor;
+    background-color: #78389726;
+    box-shadow: $mynewcolor;
+}
+
+
+//from our socials page 
+.social-link:hover {
+    background-color: #8d56a7;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.social-img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 991px) {
+    #socialsblock {
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #socialsblock {
+        width: 65%;
+    }
+}
+
+
+// // 3. Include remainder of required Bootstrap stylesheets
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// // 4. Include any optional Bootstrap components as you like
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+
+// 5. Add additional custom code here

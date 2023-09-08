@@ -6,7 +6,6 @@ Core Stuff * {
 
 #body {
     min-height: 84vh;
-    padding-bottom: 3%;
     background-image: url(/user/themes/cleantest/images/binary.png);
     background-repeat: repeat;
 }
@@ -25,7 +24,6 @@ html {
     height: 4.2rem;
     background-color: aliceblue;
     width: 100%;
-    bottom: 0;
 }
 
 
