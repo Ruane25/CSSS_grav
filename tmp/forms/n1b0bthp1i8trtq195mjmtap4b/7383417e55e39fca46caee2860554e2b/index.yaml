@@ -1,0 +1,31 @@
+form: flex-pages
+id: 'tmp://forms/session/7383417e55e39fca46caee2860554e2b'
+unique_id: 7383417e55e39fca46caee2860554e2b
+url: '/pages/gallery2/:add'
+user:
+  username: ruan
+  email: ruane25@gmail.com
+timestamps:
+  created: 1705981298
+  updated: 1705981298
+data: null
+files: {  }
+object:
+  type: pages
+  key: gallery2
+  storage_key: ''
+  timestamp: 0
+  serialized:
+    __META: {  }
+    storage_key: ''
+    parent_key: ''
+    order: '09.'
+    folder: gallery2
+    template: default
+    lang: ''
+    root: false
+    route: /
+    name: default
+    header:
+      title: Gallery2
+    frontmatter: "title: Gallery2\n"

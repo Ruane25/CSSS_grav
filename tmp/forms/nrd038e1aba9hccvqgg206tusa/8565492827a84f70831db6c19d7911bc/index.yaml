@@ -1,0 +1,90 @@
+form: flex-pages
+id: 'tmp://forms/session/8565492827a84f70831db6c19d7911bc'
+unique_id: 8565492827a84f70831db6c19d7911bc
+url: 'http://mine.ca/admin/pages/gallery'
+user:
+  username: ruan
+  email: ruane25@gmail.com
+timestamps:
+  created: 1706071895
+  updated: 1706071921
+data:
+  header:
+    title: null
+    media_order: null
+    body_classes: null
+    process:
+      twig: true
+      markdown: false
+    order_by: null
+    order_manual: null
+    published: null
+    date: null
+    publish_date: null
+    unpublish_date: null
+    metadata: null
+    taxonomy: null
+    dateformat: null
+    menu: null
+    slug: null
+    redirect: null
+    twig_first: null
+    never_cache_twig: null
+    child_type: null
+    routable: null
+    cache_enable: null
+    visible: null
+    debugger: null
+    template: null
+    append_url_extension: null
+    redirect_default_route: null
+    routes:
+      default: null
+      canonical: null
+      aliases: null
+    admin:
+      children_display_order: null
+    login:
+      visibility_requires_access: null
+    access: null
+    permissions:
+      inherit: null
+      authors: null
+      groups: null
+  content: "{% for image in page.media.images %}\n    <img src=\"{{ image.url }}\">\n{% endfor %}\n\n<style>\ndiv.gallery {\n  margin: 5px;\n  border: 1px solid #ccc;\n  float: left;\n  width: 180px;\n}\n\ndiv.gallery:hover {\n  border: 1px solid #777;\n}\n\ndiv.gallery img {\n  width: 100%;\n  height: auto;\n}\n\ndiv.desc {\n  padding: 15px;\n  text-align: center;\n}\n</style>\n\n<!-- <div class=\"gallery\">\n  <a target=\"_blank\" href=\"user/pages/08.gallery/1.JPG\">\n    <img src=\"user/pages/08.gallery/1.JPG\" alt=\"Cinque Terre\" width=\"600\" height=\"400\">\n  </a>\n  <div class=\"desc\">Add a description of the image here</div>\n</div>\ns\n<div class=\"gallery\">\n  <a target=\"_blank\" href=\"user/pages/08.gallery/2.JPG\">\n    <img src=\"user/pages/08.gallery/2.JPG\" alt=\"Forest\" width=\"600\" height=\"400\">\n  </a>\n  <div class=\"desc\">Add a description of the image here</div>\n</div>\n\n<div class=\"gallery\">\n  <a target=\"_blank\" href=\"user/pages/08.gallery/3.JPG\">\n    <img src=\"user/pages/08.gallery/3.JPG\" alt=\"Northern Lights\" width=\"600\" height=\"400\">\n  </a>\n  <div class=\"desc\">Add a description of the image here</div>\n</div>\n\n<div class=\"gallery\">\n  <a target=\"_blank\" href=\"user/pages/08.gallery/4.JPG\">\n    <img src=\"user/pages/08.gallery/4.JPG\" alt=\"Mountains\" width=\"600\" height=\"400\">\n  </a>\n  <div class=\"desc\">Add a description of the image here</div>\n</div> -->\n\n\n\n"
+  folder: gallery
+  route: null
+  name: default
+  ordering: true
+  order: null
+  blueprint: null
+  lang: null
+  xss_check: null
+  _post_entries_save: null
+files: {  }
+object:
+  type: pages
+  key: gallery
+  storage_key: 08.gallery
+  timestamp: 1705986224
+  serialized:
+    __META:
+      key: gallery
+      storage_key: 08.gallery
+      template: default
+      storage_timestamp: 1705986224
+      markdown:
+        '': { default: 1705986224 }
+      checksum: 76491e9d8729c22a4faa1e476bd60f55
+    storage_key: 08.gallery
+    parent_key: ''
+    order: '08.'
+    folder: gallery
+    template: default
+    lang: ''
+    header: {  }
+    root: false
+    frontmatter: ''
+    markdown: "<style>\ndiv.gallery {\n  margin: 5px;\n  border: 1px solid #ccc;\n  float: left;\n  width: 180px;\n}\n\ndiv.gallery:hover {\n  border: 1px solid #777;\n}\n\ndiv.gallery img {\n  width: 100%;\n  height: auto;\n}\n\ndiv.desc {\n  padding: 15px;\n  text-align: center;\n}\n</style>\n\n<!-- <div class=\"gallery\">\n  <a target=\"_blank\" href=\"user/pages/08.gallery/1.JPG\">\n    <img src=\"user/pages/08.gallery/1.JPG\" alt=\"Cinque Terre\" width=\"600\" height=\"400\">\n  </a>\n  <div class=\"desc\">Add a description of the image here</div>\n</div>\ns\n<div class=\"gallery\">\n  <a target=\"_blank\" href=\"user/pages/08.gallery/2.JPG\">\n    <img src=\"user/pages/08.gallery/2.JPG\" alt=\"Forest\" width=\"600\" height=\"400\">\n  </a>\n  <div class=\"desc\">Add a description of the image here</div>\n</div>\n\n<div class=\"gallery\">\n  <a target=\"_blank\" href=\"user/pages/08.gallery/3.JPG\">\n    <img src=\"user/pages/08.gallery/3.JPG\" alt=\"Northern Lights\" width=\"600\" height=\"400\">\n  </a>\n  <div class=\"desc\">Add a description of the image here</div>\n</div>\n\n<div class=\"gallery\">\n  <a target=\"_blank\" href=\"user/pages/08.gallery/4.JPG\">\n    <img src=\"user/pages/08.gallery/4.JPG\" alt=\"Mountains\" width=\"600\" height=\"400\">\n  </a>\n  <div class=\"desc\">Add a description of the image here</div>\n</div> -->\n\n\n"
+    slug: gallery
+    name: default.md

@@ -54,7 +54,7 @@ process:
         <h1> What we offer </h1>
     </div>
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-12 col-lg-6">
             <div class="card">
                 <div class="card-body" style="height: 113px">
                     <h5 class="card-title">Memberships</h5>
@@ -68,7 +68,7 @@ process:
                 </div>
             </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-12 col-lg-6">
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Lockers</h5>

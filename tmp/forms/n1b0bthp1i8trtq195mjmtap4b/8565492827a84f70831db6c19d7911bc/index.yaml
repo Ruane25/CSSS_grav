@@ -1,0 +1,88 @@
+form: flex-pages
+id: 'tmp://forms/session/8565492827a84f70831db6c19d7911bc'
+unique_id: 8565492827a84f70831db6c19d7911bc
+url: 'http://mine.ca/admin/pages/gallery'
+user:
+  username: ruan
+  email: ruane25@gmail.com
+timestamps:
+  created: 1705983194
+  updated: 1705983194
+data:
+  header:
+    title: null
+    media_order: null
+    body_classes: null
+    order_by: null
+    order_manual: null
+    published: null
+    date: null
+    publish_date: null
+    unpublish_date: null
+    metadata: null
+    taxonomy: null
+    dateformat: null
+    menu: null
+    slug: null
+    redirect: null
+    process: null
+    twig_first: null
+    never_cache_twig: null
+    child_type: null
+    routable: null
+    cache_enable: null
+    visible: null
+    debugger: null
+    template: null
+    append_url_extension: null
+    redirect_default_route: null
+    routes:
+      default: null
+      canonical: null
+      aliases: null
+    admin:
+      children_display_order: null
+    login:
+      visibility_requires_access: null
+    access: null
+    permissions:
+      inherit: null
+      authors: null
+      groups: null
+  content: "<style>\n* {\n  box-sizing: border-box;\n}\n\nbody {\n  margin: 0;\n  font-family: Arial;\n}\n\n.header {\n  text-align: center;\n  padding: 32px;\n}\n\n.row {\n  display: -ms-flexbox; /* IE10 */\n  display: flex;\n  -ms-flex-wrap: wrap; /* IE10 */\n  flex-wrap: wrap;\n  padding: 0 4px;\n}\n\n/* Create four equal columns that sits next to each other */\n.column {\n  -ms-flex: 25%; /* IE10 */\n  flex: 25%;\n  max-width: 25%;\n  padding: 0 4px;\n}\n\n.column img {\n  margin-top: 8px;\n  vertical-align: middle;\n  width: 100%;\n}\n\n/* Responsive layout - makes a two column-layout instead of four columns */\n@media screen and (max-width: 800px) {\n  .column {\n    -ms-flex: 50%;\n    flex: 50%;\n    max-width: 50%;\n  }\n}\n\n/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */\n@media screen and (max-width: 600px) {\n  .column {\n    -ms-flex: 100%;\n    flex: 100%;\n    max-width: 100%;\n  }\n}\n</style>\n\n<!-- Header -->\n<div class=\"header\">\n  <h1>Responsive Image Grid</h1>\n  <p>Resize the browser window to see the responsive effect.</p>\n</div>\n\n<!-- Photo Grid -->\n<div class=\"row\"> \n  <div class=\"column\">\n    <img src=\"/w3images/wedding.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/rocks.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/falls2.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/paris.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/nature.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/mist.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/paris.jpg\" style=\"width:100%\">\n  </div>\n  <div class=\"column\">\n    <img src=\"/user/pages/08.gallery/2.JPG\" style=\"width:100%\"> \n    <img src=\"/w3images/ocean.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/wedding.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/mountainskies.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/rocks.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/underwater.jpg\" style=\"width:100%\">\n  </div>  \n  <div class=\"column\">\n    <img src=\"/w3images/wedding.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/rocks.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/falls2.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/paris.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/nature.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/mist.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/paris.jpg\" style=\"width:100%\">\n  </div>\n  <div class=\"column\">\n    <img src=\"/w3images/underwater.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/ocean.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/wedding.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/mountainskies.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/rocks.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/underwater.jpg\" style=\"width:100%\">\n  </div>\n</div>\n"
+  folder: gallery
+  route: null
+  name: default
+  ordering: true
+  order: null
+  blueprint: null
+  lang: null
+  xss_check: null
+  _post_entries_save: null
+files: {  }
+object:
+  type: pages
+  key: gallery
+  storage_key: 08.gallery
+  timestamp: 1705983080
+  serialized:
+    __META:
+      key: gallery
+      storage_key: 08.gallery
+      template: default
+      storage_timestamp: 1705983080
+      markdown:
+        '': { default: 1705983080 }
+      checksum: 8194406e38768eee3ae23197c7df8197
+    storage_key: 08.gallery
+    parent_key: ''
+    order: '08.'
+    folder: gallery
+    template: default
+    lang: ''
+    header: {  }
+    root: false
+    frontmatter: ''
+    markdown: "<style>\n* {\n  box-sizing: border-box;\n}\n\nbody {\n  margin: 0;\n  font-family: Arial;\n}\n\n.header {\n  text-align: center;\n  padding: 32px;\n}\n\n.row {\n  display: -ms-flexbox; /* IE10 */\n  display: flex;\n  -ms-flex-wrap: wrap; /* IE10 */\n  flex-wrap: wrap;\n  padding: 0 4px;\n}\n\n/* Create four equal columns that sits next to each other */\n.column {\n  -ms-flex: 25%; /* IE10 */\n  flex: 25%;\n  max-width: 25%;\n  padding: 0 4px;\n}\n\n.column img {\n  margin-top: 8px;\n  vertical-align: middle;\n  width: 100%;\n}\n\n/* Responsive layout - makes a two column-layout instead of four columns */\n@media screen and (max-width: 800px) {\n  .column {\n    -ms-flex: 50%;\n    flex: 50%;\n    max-width: 50%;\n  }\n}\n\n/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */\n@media screen and (max-width: 600px) {\n  .column {\n    -ms-flex: 100%;\n    flex: 100%;\n    max-width: 100%;\n  }\n}\n</style>\n\n<!-- Header -->\n<div class=\"header\">\n  <h1>Responsive Image Grid</h1>\n  <p>Resize the browser window to see the responsive effect.</p>\n</div>\n\n<!-- Photo Grid -->\n<div class=\"row\"> \n  <div class=\"column\">\n    <img src=\"/w3images/wedding.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/rocks.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/falls2.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/paris.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/nature.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/mist.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/paris.jpg\" style=\"width:100%\">\n  </div>\n  <div class=\"column\">\n    <img src=\"/w3images/underwater.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/ocean.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/wedding.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/mountainskies.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/rocks.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/underwater.jpg\" style=\"width:100%\">\n  </div>  \n  <div class=\"column\">\n    <img src=\"/w3images/wedding.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/rocks.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/falls2.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/paris.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/nature.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/mist.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/paris.jpg\" style=\"width:100%\">\n  </div>\n  <div class=\"column\">\n    <img src=\"/w3images/underwater.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/ocean.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/wedding.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/mountainskies.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/rocks.jpg\" style=\"width:100%\">\n    <img src=\"/w3images/underwater.jpg\" style=\"width:100%\">\n  </div>\n</div>\n"
+    slug: gallery
+    name: default.md
